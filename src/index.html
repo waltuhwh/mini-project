@@ -1,0 +1,249 @@
+<html>
+    <style>
+        body{
+            background-color: #1e1e3f;
+        }
+    
+        .home__data-title{
+            font-size: 50;
+        }
+
+.nav__item:hover{
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #45a049;
+} 
+footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+.dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+     
+    
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    .dropbtn:hover{
+        background-color: #45a049;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+  
+        
+    </style>
+  
+    
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+       
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Cookbook</title>
+    
+    <body background="#1e1e3f">
+
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Foods</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#discover" class="nav__link">Discover</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#more" class="dropbtn nav__link">More</a>
+                            <div class="dropdown-content">
+                                <a href="App.js">Edit ingredients</a>
+                                <a href="random.html">Give us feedback</a>
+                                
+                              </div>
+                        </li>
+                        <li class="nav__item">
+                            <a href="while.html" class="nav__link">Ingredients</a>
+                        </li>
+                    </ul>
+
+                    
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            
+            <section class="home" id="home">
+                <img src="assets/img/main.jpg" alt="" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle">Discover your passion</span>
+                        <h1 class="home__data-title">Explore The <br> Best ingredients to create <br> <b>Your favourite dishes</b></h1>
+                        
+
+                    </div>
+
+                    
+
+                    
+                </div>
+            </section>
+
+            
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">More Information <br> About us</h2>
+                        <p class="about__description">Welcome to our culinary haven, where flavor, tradition, and innovation converge! At KRCB(Krithik Rishi's cookbook), we're passionate about celebrating the art of cooking and sharing delicious recipes that inspire home cooks and food enthusiasts alike.
+
+                            Our journey began with a simple love for good food and the desire to preserve cherished family recipes while exploring new culinary horizons. What started as a personal endeavor has blossomed into a vibrant community of food lovers united by a shared love for flavorful creations and the joy of sharing meals with loved ones.
+                            
+                            With each recipe carefully crafted, tested, and perfected, we strive to bring you a delightful array of dishes that cater to diverse tastes and dietary preferences. From comforting classics to bold and adventurous flavors, our cookbook is a treasure trove of inspiration for every occasion and every palate.
+                            
+                            But KRCB is more than just a collection of recipes; it's a celebration of culture, heritage, and the universal language of food. We believe in the power of cooking to connect people, bridge cultures, and create lasting memories around the dining table.
+                            
+                            Whether you're a seasoned chef or a novice in the kitchen, we invite you to embark on a culinary adventure with us. Explore our recipes, discover new flavors, and unleash your creativity as you embark on a journey to culinary mastery.
+                            
+                            Thank you for joining us on this delicious voyage. Together, let's savor the magic of cooking and create unforgettable dining experiences, one recipe at a time.
+                        </p>
+                    
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="assets/img/randomfood.jpg" alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="assets/img/biriyani.jpg" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+         
+            <section class="discover section" id="discover">
+                <h2 class="section__title">Discover the most <br>delicious dishes</h2>
+                
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="discover__card swiper-slide">
+                            <a href="parotta.html">
+                            <img src="assets/img/parotta.jpg" alt="" class="discover__img">
+                        </a>
+                        </div>
+
+                    
+                        <div class="discover__card swiper-slide">
+                            <a href="biriyani.html">
+                            <img src="assets/img/dosa.jpg" alt="" class="discover__img">
+                            </a>
+                            
+                        </div>
+
+                       
+                        <div class="discover__card swiper-slide">
+                            <a href="pasta.html">
+                            <img src="assets/img/pasta.jpg" alt="" class="discover__img">
+                        </a>
+                        </div>
+
+                       
+                        <div class="discover__card swiper-slide">
+                            <a href="poori.html">
+                            <img src="assets/img/poori.jpg" alt="" class="discover__img">
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <footer>
+                <p>&copy; 2024 KRBC.com All rights reserved.</p>
+            </footer> 
+                       
+            
+            
+                <video id="video-file">
+                    
+            
+    
+                <button class="button button--flex video__button" id="video-button">
+                    <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                </button>
+               
+                
+    
+        
+
+           
+
+        
+
+      
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+   
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+       
+        <script src="assets/js/main.js"></script>
+            
+         
+      
+         
+    </body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #007bff;
+        }
+
+        #recipesContainer {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .recipe {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Recipes</h1>
+
+<div id="recipesContainer"></div>
+
+<script>
+    var recipes = [
+        { name: "Dosa", ingredients: ["Rice","Urad dal (black gram lentils)","Fenugreek seeds","Salt","Poha (flattened rice)","Water"] },
+        { name: "Parotta", ingredients: ["All-purpose flour (maida)","Salt","Water","Oil or ghee"] },
+        { name: "Poori", ingredients: ["Wheat flour (atta)","Salt","Water","Oil for frying"] },
+        { name: "Pasta", ingredients: ["Durum wheat semolina", "Water","Salt","White or Red sauce"] },
+    ];
+
+    var recipesContainer = document.getElementById("recipesContainer");
+
+    for (var i = 0; i < recipes.length; i++) {
+        var recipe = recipes[i];
+        var recipeDiv = document.createElement("div");
+        recipeDiv.classList.add("recipe");
+
+        var recipeName = document.createElement("h2");
+        recipeName.textContent = recipe.name;
+
+        var ingredientsList = document.createElement("ul");
+
+        for (var j = 0; j < recipe.ingredients.length; j++) {
+            var ingredient = recipe.ingredients[j];
+            var ingredientItem = document.createElement("li");
+            ingredientItem.textContent = ingredient;
+            ingredientsList.appendChild(ingredientItem);
+        }
+
+        recipeDiv.appendChild(recipeName);
+        recipeDiv.appendChild(ingredientsList);
+        recipesContainer.appendChild(recipeDiv);
+    }
+</script>
+
+</body>
+</html>
